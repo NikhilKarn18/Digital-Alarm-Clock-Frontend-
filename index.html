@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alarm Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <!-- Heading for the clock -->
+        <h1>My Digital Alarm Clock</h1>
+        <div id="alarmClock"></div>
+        <input type="datetime-local" name="alarm" onchange="setAlarmTime(this.value)">
+        <!-- Control Buttons -->
+        <div class="buttons">
+            <!-- Event triggering on clicking the button -->
+            <button class="btn set-alarm" onclick="setAlarm()">Set alarm</button>
+            <button class="btn clear-alarm" onclick="clearAlarm()">Clear alarm</button>
+        </div>
+        <div id="alarms"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
